@@ -30,6 +30,7 @@ Devised between 1830 and 1850 by the Belgian polymath Adolphe Quetelet during th
         mainPanel(
                 uiOutput("input"),
                 uiOutput("result"),
-                uiOutput("graph")
+                uiOutput("graph"),
+                uiOutput("fork")
         ))
 ))
