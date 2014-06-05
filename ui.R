@@ -10,7 +10,7 @@ Devised between 1830 and 1850 by the Belgian polymath Adolphe Quetelet during th
                 radioButtons(
                         inputId = "units",
                         label = "Units:",
-                        choices = c("Metric (kg & cm)" = 1, "Imperial (lb & in)" = 2),
+                        choices = c("Metric (kg & m)" = 1, "Imperial (lb & in)" = 2),
                         selected = 1
                 ),
                 
@@ -23,7 +23,7 @@ Devised between 1830 and 1850 by the Belgian polymath Adolphe Quetelet during th
                 numericInput(
                         inputId = "height",
                         label = strong("Your height:"),
-                        value = 180
+                        value = 1.80
                 )
         ),
         

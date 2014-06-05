@@ -2,7 +2,7 @@ METRIC   = 1;
 IMPERIAL = 2;
 
 bmi <- function(mass, height, units) {
-        bmi = mass / (height/100)^2
+        bmi = mass / height^2
         
         if (units == IMPERIAL) {
                 bmi = bmi * 703
@@ -15,7 +15,7 @@ shinyServer(function(input, output) {
         output$input <- renderText({
                 if (input$units == METRIC) {
                         unit.weight = "kg"
-                        unit.height = "cm"
+                        unit.height = "m"
                 } else {
                         unit.weight = "lb"
                         unit.height = "in"
