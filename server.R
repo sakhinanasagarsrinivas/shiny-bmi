@@ -39,4 +39,8 @@ shinyServer(function(input, output) {
                 paste0("Your BMI is ", "<code>", round(bmi, 2), "</code>", ", which is: ", info)
         })
         
+        output$graph <- renderText({
+                "<img style='width: 40em; margin-top: 1em' src='https://upload.wikimedia.org/wikipedia/commons/e/e9/Body_mass_index_chart.svg' title='Body mass index chart (Wikipedia)' />"
+        })
+        
 })

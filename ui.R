@@ -16,7 +16,7 @@ Devised between 1830 and 1850 by the Belgian polymath Adolphe Quetelet during th
                 
                 numericInput(
                         inputId = "mass",
-                        label = strong("Your mass:"),
+                        label = strong("Your weight:"),
                         value = 70
                 ),
                 
@@ -29,6 +29,7 @@ Devised between 1830 and 1850 by the Belgian polymath Adolphe Quetelet during th
         
         mainPanel(
                 uiOutput("input"),
-                uiOutput("result")
+                uiOutput("result"),
+                uiOutput("graph")
         ))
 ))
