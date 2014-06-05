@@ -8,9 +8,9 @@ shinyUI(fluidPage(
 Devised between 1830 and 1850 by the Belgian polymath Adolphe Quetelet during the course of developing 'social physics', it is defined as the individual's body mass divided by the square of their height – with the value universally being given in units of kg/m^2. (Wikipedia)"),
         
                 radioButtons(
-                        inputId = "units",
-                        label = "Units:",
-                        choices = c("Metric (kg & m)" = 1, "Imperial (lb & in)" = 2),
+                        inputId  = "units",
+                        label    = "Units:",
+                        choices  = c("Metric (kg & m)" = 1, "Imperial (lb & in)" = 2),
                         selected = 1
                 ),
                 
@@ -23,7 +23,8 @@ Devised between 1830 and 1850 by the Belgian polymath Adolphe Quetelet during th
                 numericInput(
                         inputId = "height",
                         label = strong("Your height:"),
-                        value = 1.80
+                        value = 1.80,
+                        step  = 0.10
                 )
         ),
         
